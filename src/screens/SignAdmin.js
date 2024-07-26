@@ -42,14 +42,14 @@ export default function SignAdmin() {
 
                         </div>
                         <div className="carousel-item active">
-                            <img className="d-block w-100" src="https://source.unsplash.com/random/300×300/?burger" style={{filter:"brightness(30%)", objectFit:"fill"}} alt="First slide"/>
+                            <img className="d-block w-100" src="https://www.shutterstock.com/image-photo/burger-tomateoes-lettuce-pickles-on-600nw-2309539129.jpg" style={{filter:"brightness(30%)", objectFit:"fill"}} alt="First slide"/>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src="https://source.unsplash.com/random/300×300/?pizza" style={{filter:"brightness(30%)", objectFit:"fill"}} alt="Second slide"/>
+                            <img className="d-block w-100" src="https://as1.ftcdn.net/v2/jpg/05/12/38/54/1000_F_512385494_4Oj9BJYF5W5mnbIOvXnVLmLfN9XXHDob.jpg" style={{filter:"brightness(30%)", objectFit:"fill"}} alt="Second slide"/>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src="https://source.unsplash.com/random/300×300/?pastry" style={{filter:"brightness(30%)", objectFit:"fill"}} alt="Third slide"/>
-                        </div>
+                            <img className="d-block w-100" src="https://thecococompany.com/cdn/shop/products/Chocolate-Truffle-Pastries_grande.jpg?v=1577958105" style={{filter:"brightness(30%)", objectFit:"fill"}} alt="Third slide"/>
+                        </div>
                     </div>
                     <button className="carousel-control-prev" data-bs-target="#carouselExampleControls" type="button" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
