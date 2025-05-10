@@ -13,7 +13,7 @@ export default function Cart() {
   let totalPrice = data.reduce((total, food) => total + food.price, 0)
   const handleCheckOut= async()=>{
     let userEmail=localStorage.getItem('userEmail')
-    let response=await fetch("http://localhost:5000/api/orderData",{
+    let response=await fetch("https://symmetrical-palm-tree-4pxq756wp7j27jqj-5000.app.github.dev/api/orderData",{
         method: 'POST',
       headers: {
         'Content-Type': 'application/json'

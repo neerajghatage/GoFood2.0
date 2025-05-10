@@ -12,7 +12,7 @@ export default function SignAdmin() {
   const [foodCat, setFoodCat] = useState([]);
   const [foodItems, setFoodItems] = useState([]);
   const loadData = async () => {
-    let response = await fetch("http://localhost:5000/api/foodData", {
+    let response = await fetch("https://symmetrical-palm-tree-4pxq756wp7j27jqj-5000.app.github.dev/api/foodData", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

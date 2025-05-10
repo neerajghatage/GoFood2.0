@@ -7,17 +7,9 @@ const app = express();
 
 connect();
 app.use(cors({
-  origin: 'http://localhost:3000' // Allow requests from this origin only
+  origin: 'https://symmetrical-palm-tree-4pxq756wp7j27jqj-3000.app.github.dev'
+  // credentials: true // Only if using cookies or auth headers
 }));
-app.options('/api/loginuser', cors()); // Handle OPTIONS request for /api/loginuser route
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
 
 const foodItemRoutes = require('./Routes/foodItemRoutes');
 const OrderDataRoutes = require('./Routes/orderDataRoutes');

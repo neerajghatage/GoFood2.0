@@ -19,7 +19,7 @@ export default function FormFoodItem() {
         formData.append('files', image);
 
         try {
-            const response = await fetch('http://localhost:5000/api/food-items', {
+            const response = await fetch('https://symmetrical-palm-tree-4pxq756wp7j27jqj-5000.app.github.dev/api/food-items', {
                 method: 'POST',
                 body: formData
             });

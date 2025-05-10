@@ -1,14 +1,14 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link,useNavigate } from 'react-router-dom';
-import Navbar from '../components/AdminNavbar';
+import Navbar from '../components/Navbar';
 
-export default function Login2() {
+export default function Login1() {
   const [credentials, setcredentials] = useState({ email: "", password: "" })
   let navigate=useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/loginadmin", {
+    const response = await fetch("https://symmetrical-palm-tree-4pxq756wp7j27jqj-5000.app.github.dev/api/loginuser", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ export default function Login2() {
     if (json.success) {
       localStorage.setItem('userEmail', credentials.email)
       localStorage.setItem('authToken', json.authToken)
-      navigate("/admin");
+      navigate("/user");
     }
     else{ alert("Enter Valid Credentials")}
 
@@ -48,7 +48,7 @@ export default function Login2() {
             <input type="password" className="form-control" name='password' value={credentials.password} onChange={onChange}></input>
           </div>
           <button type="submit" className="btn btn-primary">Submit</button>
-          
+          <Link to="/createuser" className="m-3 mx-1 btn btn-danger">Sign Up</Link>
         </form>
       </div>
     </div>

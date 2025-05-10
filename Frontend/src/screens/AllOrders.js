@@ -8,7 +8,7 @@ export default function MyOrder() {
 
     const fetchAllOrdersData = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/allOrders", {
+            const response = await fetch("https://symmetrical-palm-tree-4pxq756wp7j27jqj-5000.app.github.dev/api/allOrders", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -1,11 +1,11 @@
 import * as React from "react";
 import './App.css';
-import Login1 from './screens/Login1';
+import Login1 from './screens/Login1.js';
 import Login2 from "./screens/Login2.js";
-import Sign from './screens/Sign';
-import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css'
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+import Sign from './screens/Sign.js';
+import '../Frontend/node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.js'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Signup from "./screens/Signup.js";
 import AllOrders from "./screens/AllOrders.js";
 import FormFoodItem from "./components/FormFoodItem.js";

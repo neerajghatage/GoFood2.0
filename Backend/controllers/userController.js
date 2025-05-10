@@ -27,6 +27,7 @@ exports.createUser = async (req, res) => {
 
         res.json({ success: true });
     } catch (error) {
+        console.error(53353535);
         console.error(error);
         res.json({ success: false });
     }

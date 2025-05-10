@@ -11,12 +11,14 @@ export default function Sign() {
   const [foodCat, setFoodCat] = useState([]);
   const [foodItems, setFoodItems] = useState([]);
   const loadData = async () => {
-    let response = await fetch("http://localhost:5000/api/foodData", {
+    console.log(34353);
+    let response = await fetch("https://symmetrical-palm-tree-4pxq756wp7j27jqj-5000.app.github.dev/api/foodData", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
       }
     });
+    console.log(response[0]);
     response = await response.json();
     setFoodItems(response[0]);
     setFoodCat(response[1]);
