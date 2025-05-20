@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const connect = require("./db/connect");
 const cors = require('cors');
+require('./middleware/cache_middleware'); 
 const app = express();
 
 connect();
